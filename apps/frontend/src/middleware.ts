@@ -78,6 +78,9 @@ function checkBasicAuth(request: NextRequest): NextResponse | null {
   const basicAuthEnabled = process.env.BASIC_AUTH_ENABLED === 'true';
   if (!basicAuthEnabled) return null;
 
+  // Always allow /health endpoint for Railway healthchecks
+  if (request.nextUrl.pathname === '/health') return null;
+
   const authHeader = request.headers.get('authorization');
   if (authHeader) {
     const [scheme, encoded] = authHeader.split(' ');
