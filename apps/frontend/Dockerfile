@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install only the frontend workspace project (and its deps) using pnpm.
-RUN corepack enable pnpm && pnpm install --filter ./apps/frontend ${PNPM_LOCKFILE_MODE}
+RUN corepack enable pnpm && pnpm install --filter ./apps/frontend --filter @agentpress/shared ${PNPM_LOCKFILE_MODE}
 
 
 # ---- Builder Stage ----
