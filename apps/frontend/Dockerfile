@@ -30,15 +30,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install only the frontend workspace project (and its deps) using pnpm.
-ARG NEXT_PUBLIC_SUPABASE_URL
-ARG NEXT_PUBLIC_SUPABASE_ANON_KEY
-ARG NEXT_PUBLIC_BACKEND_URL
-ARG NEXT_PUBLIC_URL
-ENV NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL
-ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=$NEXT_PUBLIC_SUPABASE_ANON_KEY
-ENV NEXT_PUBLIC_BACKEND_URL=$NEXT_PUBLIC_BACKEND_URL
-ENV NEXT_PUBLIC_URL=$NEXT_PUBLIC_URL
-
 RUN corepack enable pnpm && pnpm install --filter ./apps/frontend --filter @agentpress/shared ${PNPM_LOCKFILE_MODE}
 
 
@@ -56,6 +47,17 @@ WORKDIR /app/apps/frontend
 # Learn more here: https://nextjs.org/telemetry
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NEXT_OUTPUT=standalone
+
+# Build-time environment variables required for Next.js static generation.
+# These MUST be in the builder stage (not deps stage) so they are available during `next build`.
+ARG NEXT_PUBLIC_SUPABASE_URL
+ARG NEXT_PUBLIC_SUPABASE_ANON_KEY
+ARG NEXT_PUBLIC_BACKEND_URL
+ARG NEXT_PUBLIC_URL
+ENV NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL
+ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=$NEXT_PUBLIC_SUPABASE_ANON_KEY
+ENV NEXT_PUBLIC_BACKEND_URL=$NEXT_PUBLIC_BACKEND_URL
+ENV NEXT_PUBLIC_URL=$NEXT_PUBLIC_URL
 
 RUN corepack enable pnpm && pnpm run build
 
