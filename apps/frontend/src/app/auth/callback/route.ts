@@ -21,10 +21,10 @@ export async function GET(request: NextRequest) {
   const termsAccepted = searchParams.get('terms_accepted') === 'true'
   const email = searchParams.get('email') || '' // Email passed from magic link redirect URL
 
-  // Use request origin for redirects (most reliable for local dev)
-  // This ensures localhost:3000 redirects stay on localhost, not staging
+  // Use NEXT_PUBLIC_URL if set (production), otherwise fall back to request origin (local dev)
+  // This prevents internal container addresses (0.0.0.0:3000) from leaking into redirect URLs
   const requestOrigin = request.nextUrl.origin
-  const baseUrl = requestOrigin || process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'
+  const baseUrl = process.env.NEXT_PUBLIC_URL || requestOrigin || 'http://localhost:3000'
   const error = searchParams.get('error')
   const errorCode = searchParams.get('error_code')
   const errorDescription = searchParams.get('error_description')
