@@ -2,12 +2,12 @@
  * Site metadata configuration - SIMPLE AND WORKING
  */
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://www.kortix.com';
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://frontend-production-2ba2.up.railway.app';
 
 export const siteMetadata = {
-  name: 'Kortix',
-  title: 'Kortix: Your Autonomous AI Worker',
-  description: 'Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects.',
+  name: 'Home Grown Property Group',
+  title: 'Home Grown Property Group: AI Assistant',
+  description: 'Your AI-powered assistant for real estate research, marketing, and productivity. Built for Home Grown Property Group.',
   url: baseUrl,
-  keywords: 'Kortix, AI Worker, Agentic AI, Autonomous AI Worker, AI Automation, AI Workflow Automation, AI Assistant, Task Automation',
+  keywords: 'Home Grown Property Group, Real Estate, South Charlotte, Indian Land, Fort Mill, Waxhaw, AI Assistant, Real Broker',
 };

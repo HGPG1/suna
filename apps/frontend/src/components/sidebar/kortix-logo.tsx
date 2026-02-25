@@ -14,22 +14,22 @@ export function KortixLogo({ size = 24, variant = 'symbol', className }: KortixL
   if (variant === 'logomark') {
     return (
       <img
-        src="/logomark-white.svg"
-        alt="Kortix"
-        className={cn('invert dark:invert-0 flex-shrink-0', className)}
-        style={{ height: `${size}px`, width: 'auto' }}
+        src="/hgpg-logo.png"
+        alt="Home Grown Property Group"
+        className={cn('flex-shrink-0', className)}
+        style={{ height: `${size}px`, width: 'auto', maxWidth: '200px' }}
         suppressHydrationWarning
       />
     );
   }
 
-  // Default symbol variant behavior - invert for dark mode
+  // Default symbol variant - HGPG horizontal logo
   return (
     <img
-      src="/kortix-symbol.svg"
-      alt="Kortix"
-      className={cn('dark:invert flex-shrink-0', className)}
-      style={{ width: `${size}px`, height: `${size}px` }}
+      src="/hgpg-logo.png"
+      alt="Home Grown Property Group"
+      className={cn('flex-shrink-0', className)}
+      style={{ height: `${size}px`, width: 'auto', maxWidth: '200px' }}
       suppressHydrationWarning
     />
   );
