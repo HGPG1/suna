@@ -139,6 +139,12 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // 🏠 LOCAL/SELF-HOSTED MODE: Skip all auth and billing checks entirely
+  const isLocalMode = process.env.NEXT_PUBLIC_ENV_MODE?.toLowerCase() === 'local';
+  if (isLocalMode) {
+    return NextResponse.next();
+  }
+
   // Handle Supabase verification redirects at root level
   if (pathname === '/' || pathname === '') {
     const searchParams = request.nextUrl.searchParams;
@@ -261,11 +267,6 @@ export async function middleware(request: NextRequest) {
       url.pathname = '/auth';
       url.searchParams.set('redirect', pathname);
       return NextResponse.redirect(url);
-    }
-
-    const isLocalMode = process.env.NEXT_PUBLIC_ENV_MODE?.toLowerCase() === 'local'
-    if (isLocalMode) {
-      return supabaseResponse;
     }
 
     if (BILLING_ROUTES.some(route => pathname.startsWith(route))) {
