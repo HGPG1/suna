@@ -334,6 +334,9 @@ allowed_origins = [
     "https://dev.kortix.com",
     "https://staging.kortix.com",
     "https://prod-test.kortix.com",
+    # HGPG custom deployment
+    "https://ai.homegrownpropertygroup.com",
+    "https://frontend-production-2ba2.up.railway.app",
 ]
 # Allow all *.kortix.com subdomains and Vercel preview deployments
 allow_origin_regex = r"https://([a-z0-9-]+\.)?kortix\.com|https://.*-kortixai\.vercel\.app"
