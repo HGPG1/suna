@@ -54,9 +54,10 @@ export default function SettingUpPage() {
             .eq('account_id', accountData.id)
             .single();
 
-          // If subscription exists, webhook already succeeded - redirect to dashboard
-          if (creditAccount && creditAccount.tier !== 'none' && creditAccount.stripe_subscription_id) {
-            console.log('✅ Account already initialized via webhook, redirecting to dashboard');
+          // If credit account exists (any tier), account is initialized - redirect to dashboard
+          // Note: stripe_subscription_id is not required for self-hosted deployments
+          if (creditAccount) {
+            console.log('✅ Account already initialized, redirecting to dashboard');
             isInitializing.current = false;
             setStatus('success');
             setTimeout(() => {
