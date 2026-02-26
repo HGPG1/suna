@@ -34,7 +34,7 @@ export function CreditsExplainedModal({ open, onOpenChange }: CreditsExplainedMo
               <h2 className="text-lg font-semibold">Understanding Credits</h2>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Credits are the universal currency that powers everything you do on Kortix. 
+              Credits are the universal currency that powers everything you do on Home Grown AI. 
               They're consumed when your AI agents work on tasks, and the cost varies based 
               on the complexity and resources required.
             </p>

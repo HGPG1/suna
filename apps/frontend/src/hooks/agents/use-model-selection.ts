@@ -28,7 +28,7 @@ const getDefaultModel = (accessibleModels: ModelOption[]): string => {
   const basicModel = accessibleModels.find(m => m.id === 'kortix/basic');
   if (basicModel) return basicModel.id;
 
-  const powerModel = accessibleModels.find(m => m.id === 'kortix/power');
+  const powerModel = accessibleModels.find(m => m.id === 'hgpg/power');
   if (powerModel) return powerModel.id;
 
   // Fallback: pick from accessible models sorted by priority
@@ -110,10 +110,10 @@ export const useModelSelection = () => {
     const isNowPaid = isPaidTier(currentTier);
 
     if (wasFree && isNowPaid && prevTierKey.current !== null) {
-      const powerModel = availableModels.find(m => m.id === 'kortix/power' && !m.requiresSubscription);
+      const powerModel = availableModels.find(m => m.id === 'hgpg/power' && !m.requiresSubscription);
       if (powerModel) {
-        console.log('🚀 useModelSelection: Upgraded to paid tier! Switching to kortix/power');
-        setSelectedModel('kortix/power');
+        console.log('🚀 useModelSelection: Upgraded to paid tier! Switching to hgpg/power');
+        setSelectedModel('hgpg/power');
       }
     }
 

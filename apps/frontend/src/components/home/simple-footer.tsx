@@ -144,7 +144,7 @@ export function SimpleFooter() {
         <div className="mt-12 pt-8 border-t border-border/40">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Kortix. All rights reserved.
+              © {currentYear} Home Grown AI. All rights reserved.
             </p>
             <div className="flex items-center gap-1 text-sm text-muted-foreground">
               <span>Built with</span>

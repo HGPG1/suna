@@ -329,7 +329,7 @@ export function KortixAppBanners(props: KortixAppBannersProps) {
                         Kortix for Desktop is here
                       </h3>
                       <p className="text-muted-foreground dark:text-white/60 text-xs leading-relaxed mb-3">
-                        Hand it off to Kortix. From anywhere on your {desktopPlatform === 'mac' ? 'Mac' : 'Desktop'}. Download now.
+                        Hand it off to Home Grown AI. From anywhere on your {desktopPlatform === 'mac' ? 'Mac' : 'Desktop'}. Download now.
                       </p>
 
                       {/* Desktop download badge */}

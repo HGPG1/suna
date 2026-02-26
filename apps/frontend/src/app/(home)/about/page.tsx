@@ -314,7 +314,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Kortix logo */}
+            {/* HGPG logo */}
             <div className="text-center mt-6">
               <Image src="/hgpg-logo-clean.png" alt="Home Grown AI" width={16} height={13} className="inline-block opacity-20 dark:invert" />
             </div>
@@ -349,7 +349,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Kortix logo */}
+              {/* HGPG logo */}
               <div className="text-center mt-4">
                 <Image src="/hgpg-logo-clean.png" alt="Home Grown AI" width={16} height={13} className="inline-block opacity-20 dark:invert" />
               </div>
@@ -378,7 +378,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Kortix logo */}
+              {/* HGPG logo */}
               <div className="text-center mt-4">
                 <Image src="/hgpg-logo-clean.png" alt="Home Grown AI" width={16} height={13} className="inline-block opacity-20 dark:invert" />
               </div>

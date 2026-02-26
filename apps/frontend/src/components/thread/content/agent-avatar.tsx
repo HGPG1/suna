@@ -33,7 +33,7 @@ export const AgentAvatar: React.FC<AgentAvatarProps> = ({
   // Agent data props
   agent: propAgent,
   agentId,
-  fallbackName = "Kortix",
+  fallbackName = "Home Grown AI",
 
   // Direct props
   iconName: propIconName,
@@ -159,7 +159,7 @@ interface AgentNameProps {
 export const AgentName: React.FC<AgentNameProps> = ({
   agent: propAgent,
   agentId,
-  fallback = "Kortix"
+  fallback = "Home Grown AI"
 }) => {
   const cachedAgent = useAgentFromCache(!propAgent && agentId ? agentId : undefined);
   const agent = propAgent || cachedAgent;

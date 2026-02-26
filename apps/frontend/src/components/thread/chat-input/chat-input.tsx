@@ -1010,7 +1010,7 @@ export const ChatInput = memo(forwardRef<ChatInputHandles, ChatInputProps>(
     const agents = Array.isArray(agentsResponse?.agents) ? agentsResponse.agents : [];
 
     // Check if selected agent is Kortix based on agent data
-    // While loading, default to Kortix (assume Kortix is the default agent)
+    // While loading, default to Home Grown AI
     const selectedAgent = agents.find(agent => agent.agent_id === selectedAgentId);
     const sunaAgent = agents.find(agent => agent.metadata?.is_suna_default === true);
     const isSunaAgent = isLoadingAgents 

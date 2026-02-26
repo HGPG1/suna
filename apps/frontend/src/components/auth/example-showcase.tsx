@@ -422,7 +422,7 @@ export function ExampleShowcase() {
                   {/* Right buttons */}
                   <div className="flex gap-1 items-center flex-shrink-0">
                     <button className="px-2 py-1 rounded-lg border bg-background flex items-center gap-1">
-                      <span className="text-[8px] font-medium">Kortix</span>
+                      <span className="text-[8px] font-medium">Home Grown AI</span>
                       <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>

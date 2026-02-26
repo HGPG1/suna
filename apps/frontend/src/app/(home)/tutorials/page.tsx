@@ -41,7 +41,7 @@ const tutorials: Tutorial[] = [
   {
     id: 'getting-started-first-task',
     title: 'Getting Started: Your First Task',
-    description: 'Learn the basics of creating and completing your first task with Kortix. This tutorial walks you through the essential workflow to get you productive right away.',
+    description: 'Learn the basics of creating and completing your first task with Home Grown AI. This tutorial walks you through the essential workflow to get you productive right away.',
     duration: '4 min',
     icon: Rocket,
     embedCode: `<div style="position: relative; padding-bottom: calc(57.3684% + 41px); height: 0px; width: 100%;"><iframe src="https://demo.arcade.software/8tC4UfBbqMpsUo6CM30i?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" title="Your first task with Kortix" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;" ></iframe></div>`,
@@ -57,7 +57,7 @@ const tutorials: Tutorial[] = [
   {
     id: 'create-manage-files',
     title: 'How to Create and Manage Files with Kortix',
-    description: 'Learn how to create, organize, and manage files with Kortix. This tutorial covers downloading data, exporting to different formats like Excel, and more.',
+    description: 'Learn how to create, organize, and manage files with Home Grown AI. This tutorial covers downloading data, exporting to different formats like Excel, and more.',
     duration: '3 min',
     icon: FolderOpen,
     embedCode: `<div style="position: relative; padding-bottom: calc(57.3684% + 41px); height: 0px; width: 100%;"><iframe src="https://demo.arcade.software/8augEzFC6kfwzfGxGg7H?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" title="Download Tesla Market Share Data to Excel" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;" ></iframe></div>`,
@@ -65,7 +65,7 @@ const tutorials: Tutorial[] = [
   {
     id: 'create-videos-images',
     title: 'Create Videos and Images',
-    description: 'Explore the powerful media creation capabilities of Kortix. Learn how to generate videos and images using AI to enhance your projects.',
+    description: 'Explore the powerful media creation capabilities of Home Grown AI. Learn how to generate videos and images using AI to enhance your projects.',
     duration: '3 min',
     icon: Video,
     embedCode: `<div style="position: relative; padding-bottom: calc(57.3684% + 41px); height: 0px; width: 100%;"><iframe src="https://demo.arcade.software/0FLRZoBUHFwGEbpIfUnP?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" title="Generate a Photorealistic Image and Adventure Video" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;" ></iframe></div>`,
@@ -267,7 +267,7 @@ export default function TutorialsPage() {
               Tutorials
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Step-by-step interactive tutorials to help you get the most out of Kortix. 
+              Step-by-step interactive tutorials to help you get the most out of Home Grown AI. 
               From getting started to advanced workflows, master every feature.
             </p>
           </motion.div>
@@ -297,7 +297,7 @@ export default function TutorialsPage() {
                 More tutorials coming soon
               </h3>
               <p className="text-sm text-muted-foreground max-w-md mx-auto">
-                We&apos;re always adding new tutorials to help you get the most out of Kortix. 
+                We&apos;re always adding new tutorials to help you get the most out of Home Grown AI. 
                 Check back regularly for fresh content and tips.
               </p>
             </motion.div>
@@ -322,7 +322,7 @@ export default function TutorialsPage() {
                     Support
                   </a>
                   <a
-                    href="mailto:support@kortix.com"
+                    href="mailto:support@homegrownpropertygroup.com"
                     className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                   >
                     <ChevronRight className="w-4 h-4" />

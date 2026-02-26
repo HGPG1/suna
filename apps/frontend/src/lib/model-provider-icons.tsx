@@ -18,15 +18,15 @@ export type ModelProvider =
  */
 export function isKortixMode(modelId: string): boolean {
   // New Kortix registry IDs
-  if (modelId === 'kortix/basic' || modelId === 'kortix/power' || modelId === 'kortix/test' ||
+  if (modelId === 'kortix/basic' || modelId === 'hgpg/power' || modelId === 'kortix/test' ||
       modelId === 'kortix-basic' || modelId === 'kortix-power' || modelId === 'kortix-test') {
     return true;
   }
-  // Legacy: Kortix Basic (Haiku 4.5)
+  // Legacy: Home Grown AI Basic (Haiku 4.5)
   if (modelId.includes('claude-haiku-4-5') || modelId.includes('heol2zyy5v48')) {
     return true;
   }
-  // Legacy: Kortix Advanced Mode (Sonnet 4.5)
+  // Legacy: Home Grown AI Advanced Mode (Sonnet 4.5)
   if (modelId.includes('claude-sonnet-4-5') || modelId.includes('few7z4l830xh')) {
     return true;
   }
