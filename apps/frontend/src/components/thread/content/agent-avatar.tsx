@@ -90,8 +90,8 @@ export const AgentAvatar: React.FC<AgentAvatarProps> = ({
         style={{ width: size, height: size, ...borderRadiusStyle }}
       >
         <img
-          src="/kortix-symbol.svg"
-          alt="Kortix"
+          src="/hgpg-logo-clean.png"
+          alt="Home Grown AI"
           className="flex-shrink-0 invert dark:invert-0"
           style={{ width: `${size * 0.5}px`, height: `${size * 0.5}px` }}
         />

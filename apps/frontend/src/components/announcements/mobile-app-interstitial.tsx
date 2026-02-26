@@ -8,8 +8,8 @@ const STORAGE_KEY = 'kortix-mobile-banner-dismissed';
 const DISMISS_EXPIRY_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 const STORE_LINKS = {
-  ios: 'https://apps.apple.com/ie/app/kortix/id6754448524',
-  android: 'https://play.google.com/store/apps/details?id=com.kortix.app',
+  ios: 'https://ai.homegrownpropertygroup.com',
+  android: 'https://ai.homegrownpropertygroup.com',
 } as const;
 
 type Platform = 'ios' | 'android';
@@ -118,7 +118,7 @@ export function MobileAppInterstitial() {
               {/* Text */}
               <div className="flex-1 min-w-0">
                 <h3 className="text-base font-semibold text-neutral-900 dark:text-white mb-0.5">
-                  Get Kortix for Mobile
+                  Get Home Grown AI
                 </h3>
                 <p className="text-sm text-neutral-500 dark:text-neutral-400">
                   Your AI Worker, in your pocket

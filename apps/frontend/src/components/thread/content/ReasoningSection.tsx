@@ -80,12 +80,12 @@ export function ReasoningSection({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.15, ease: "easeOut" }}
     >
-      {/* Header row: Full Kortix logo + Toggle button */}
+      {/* Header row: Full HGPG logo + Toggle button */}
       <div className="flex items-center gap-3">
-        {/* Full Kortix logo (logomark with text) - pulses when reasoning is active */}
+        {/* Full HGPG logo - pulses when reasoning is active */}
         <img
-          src="/kortix-logomark-white.svg"
-          alt="Kortix"
+          src="/hgpg-logo-clean.png"
+          alt="Home Grown AI"
           className={cn(
             "flex-shrink-0 dark:invert-0 invert",
             shouldShimmer && "animate-pulse"

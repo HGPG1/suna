@@ -63,7 +63,7 @@ export function CreditsExplainedModal({ open, onOpenChange }: CreditsExplainedMo
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
                     <div>
-                      <span className="font-medium text-foreground">Kortix computer:</span> Code execution, browser automation, and interactive task processing.
+                      <span className="font-medium text-foreground">Home Grown AI computer:</span> Code execution, browser automation, and interactive task processing.
                     </div>
                   </li>
                   <li className="flex items-start gap-3">

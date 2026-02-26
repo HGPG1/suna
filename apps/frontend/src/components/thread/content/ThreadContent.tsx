@@ -70,13 +70,13 @@ interface AgentInfo {
   avatar: React.ReactNode;
 }
 
-// Reusable agent header - shows Kortix logo for Kortix, avatar+name for others
+// Reusable agent header - shows HGPG logo for Home Grown AI, avatar+name for others
 const AgentHeader = memo(function AgentHeader({ agentInfo }: { agentInfo: AgentInfo }) {
-  if (agentInfo.name === "Kortix") {
+  if (agentInfo.name === "Home Grown AI") {
     return (
       <img
-        src="/kortix-logomark-white.svg"
-        alt="Kortix"
+        src="/hgpg-logo-clean.png"
+        alt="Home Grown AI"
         className="dark:invert-0 invert flex-shrink-0"
         style={{ height: '12px', width: 'auto' }}
       />
@@ -1213,7 +1213,7 @@ const AssistantGroupRow = memo(function AssistantGroupRow({
   return (
     <div key={group.key} ref={isLastGroup ? latestMessageRef : null}>
       <div className="flex flex-col gap-2">
-        {/* Reasoning section with integrated Kortix icon */}
+        {/* Reasoning section with integrated HGPG icon */}
         {reasoningSection}
         {/* Show AgentHeader only when reasoning section is NOT displayed */}
         {!reasoningSection && (
@@ -1297,7 +1297,7 @@ export const ThreadContent: React.FC<ThreadContentProps> = memo(
     sandboxId,
     project,
     isPreviewMode = false,
-    agentName = "Kortix",
+    agentName = "Home Grown AI",
     agentAvatar = <KortixLogo size={14} />,
     emptyStateComponent,
     threadMetadata,
@@ -1350,7 +1350,7 @@ export const ThreadContent: React.FC<ThreadContentProps> = memo(
       if (recentAssistantWithAgent?.agents?.name) {
         const rawName = recentAssistantWithAgent.agents.name;
         const name =
-          typeof rawName === "string" ? rawName : String(rawName || "Kortix");
+          typeof rawName === "string" ? rawName : String(rawName || "Home Grown AI");
         return {
           name,
           avatar: (
@@ -1360,9 +1360,9 @@ export const ThreadContent: React.FC<ThreadContentProps> = memo(
           ),
         };
       }
-      const fallbackName = typeof agentName === "string" ? agentName : "Kortix";
+      const fallbackName = typeof agentName === "string" ? agentName : "Home Grown AI";
       return {
-        name: fallbackName || "Kortix",
+        name: fallbackName || "Home Grown AI",
         avatar: agentAvatar,
       };
     }, [threadMetadata, displayMessages, agentName, agentAvatar]);
@@ -1818,8 +1818,8 @@ export const ThreadContent: React.FC<ThreadContentProps> = memo(
                       {/* Match ReasoningSection header layout for smooth transition */}
                       <div className="flex items-center gap-3">
                         <img
-                          src="/kortix-logomark-white.svg"
-                          alt="Kortix"
+                          src="/hgpg-logo-clean.png"
+                          alt="Home Grown AI"
                           className="dark:invert-0 invert flex-shrink-0 animate-pulse"
                           style={{ height: '14px', width: 'auto' }}
                         />

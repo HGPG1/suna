@@ -12,8 +12,8 @@ const MOBILE_STORAGE_KEY = 'kortix-mobile-banner-dismissed';
 const DESKTOP_STORAGE_KEY = 'kortix-desktop-banner-dismissed';
 
 const STORE_LINKS = {
-  ios: 'https://apps.apple.com/ie/app/kortix/id6754448524',
-  android: 'https://play.google.com/store/apps/details?id=com.kortix.app',
+  ios: 'https://ai.homegrownpropertygroup.com',
+  android: 'https://ai.homegrownpropertygroup.com',
 };
 
 const DOWNLOAD_LINKS = {
@@ -240,7 +240,7 @@ export function KortixAppBanners(props: KortixAppBannersProps) {
                     {/* Content area */}
                     <div className="p-4 bg-muted/50 dark:bg-[#161618]">
                       <h3 className="text-foreground dark:text-white text-sm font-semibold mb-1">
-                        Kortix for Mobile is here
+                        Home Grown AI is here
                       </h3>
                       <p className="text-muted-foreground dark:text-white/60 text-xs leading-relaxed mb-3">
                         Scan QR or tap to download

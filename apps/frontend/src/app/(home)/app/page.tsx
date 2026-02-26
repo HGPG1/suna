@@ -10,8 +10,8 @@ import { SimpleFooter } from '@/components/home/simple-footer';
 // This page only renders for desktop users
 
 const STORE_LINKS = {
-  ios: 'https://apps.apple.com/ie/app/kortix/id6754448524',
-  android: 'https://play.google.com/store/apps/details?id=com.kortix.app',
+  ios: 'https://ai.homegrownpropertygroup.com',
+  android: 'https://ai.homegrownpropertygroup.com',
 };
 
 // Kortix symbol SVG (inline to avoid loading issues)
@@ -84,11 +84,11 @@ export default function AppDownloadPage() {
             </div>
             
             <h1 className="text-2xl md:text-3xl font-semibold text-foreground text-center tracking-tight mb-3">
-              Kortix for Mobile
+              Home Grown AI
             </h1>
             <p className="text-base text-muted-foreground text-center max-w-xl leading-relaxed">
               Your AI Worker, in your pocket.<br />
-              Download the app and take Kortix with you everywhere.
+              Access Home Grown AI from anywhere.
             </p>
           </motion.div>
 

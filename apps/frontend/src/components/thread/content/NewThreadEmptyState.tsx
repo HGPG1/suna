@@ -933,7 +933,7 @@ export function NewThreadEmptyState({ onSubmit, className }: NewThreadEmptyState
       <div className="flex items-center gap-2">
         <img
           src="/kortix-logomark-white.svg"
-          alt="Kortix"
+          alt="Home Grown AI"
           className="dark:invert-0 invert"
           style={{ height: '14px', width: 'auto' }}
         />

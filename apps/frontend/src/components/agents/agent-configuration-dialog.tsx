@@ -245,7 +245,7 @@ export function AgentConfigurationDialog({
     if (!isNameEditable) {
       if (isSunaAgent) {
         toast.error("Name cannot be edited", {
-          description: "Kortix's name is managed centrally and cannot be changed.",
+          description: "Home Grown AI's name is managed centrally and cannot be changed.",
         });
       }
       setEditName(formData.name);
@@ -261,7 +261,7 @@ export function AgentConfigurationDialog({
     if (!isSystemPromptEditable) {
       if (isSunaAgent) {
         toast.error("System prompt cannot be edited", {
-          description: "Kortix's system prompt is managed centrally.",
+          description: "Home Grown AI's system prompt is managed centrally.",
         });
       }
       return;
@@ -278,7 +278,7 @@ export function AgentConfigurationDialog({
     if (!areToolsEditable) {
       if (isSunaAgent) {
         toast.error("Tools cannot be edited", {
-          description: "Kortix's tools are managed centrally.",
+          description: "Home Grown AI's tools are managed centrally.",
         });
       }
       return;
@@ -652,7 +652,7 @@ export function AgentConfigurationDialog({
                       <Alert className="mb-4 bg-blue-50 border-blue-200 dark:bg-blue-950/20 dark:border-blue-900">
                         <Info className="h-4 w-4 text-blue-600 dark:text-blue-400" />
                         <AlertDescription className="text-sm text-blue-800 dark:text-blue-300">
-                          You can't edit the main Kortix, but you can create a new AI Worker that you can modify as you wish.
+                          You can't edit the main Home Grown AI, but you can create a new AI Worker that you can modify as you wish.
                         </AlertDescription>
                       </Alert>
                     )}
@@ -673,7 +673,7 @@ export function AgentConfigurationDialog({
                       <Alert className="mb-4 bg-blue-50 border-blue-200 dark:bg-blue-950/20 dark:border-blue-900">
                         <Info className="h-4 w-4 text-blue-600 dark:text-blue-400" />
                         <AlertDescription className="text-sm text-blue-800 dark:text-blue-300">
-                          You can't edit the main Kortix, but you can create a new AI Worker that you can modify as you wish.
+                          You can't edit the main Home Grown AI, but you can create a new AI Worker that you can modify as you wish.
                         </AlertDescription>
                       </Alert>
                     )}

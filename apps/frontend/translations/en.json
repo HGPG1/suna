@@ -348,7 +348,7 @@
   "dashboard": {
     "title": "Home Grown AI",
     "welcome": "Welcome",
-    "whatWouldYouLike": "What do you want to get done?",
+    "whatWouldYouLike": "What do you want to get done today?",
     "describeWhatYouNeed": "Describe what you need help with...",
     "usageLimits": "Usage Limits",
     "threads": "Threads",
@@ -361,33 +361,33 @@
     "aiAssistantReady": "Your AI assistant is ready to help",
     "greetings": {
       "morning": [
-        "Good morning! What's on the agenda?",
-        "Rise and shine! What are we building?",
-        "Morning! Ready to be productive?"
+        "Good morning! Ready to close some deals?",
+        "Rise and shine! What's on the agenda today?",
+        "Morning! Let's make today productive."
       ],
       "afternoon": [
-        "Good afternoon! What can I help with?",
+        "Good afternoon! What can Home Grown AI help with?",
         "Hope your day's going well! What's next?"
       ],
       "evening": [
-        "Good evening! Burning the midnight oil?",
+        "Good evening! Still hustling?",
         "Evening! What are we working on tonight?",
-        "Good evening! Let's get things done."
+        "Good evening! Results start at the roots."
       ],
       "random": [
-        "Guess who's back, back again",
-        "Ahoy! What can Home Grown AI do for you?",
+        "Results start at the roots.",
+        "What can Home Grown AI do for you?",
         "What do you want to get done?",
-        "Let's build something awesome",
+        "Let's build something great today",
         "Ready when you are!",
-        "What's cooking?",
+        "What's on your plate?",
         "At your service! What's the mission?",
         "Let's make some magic happen",
         "What challenge shall we tackle?",
         "Your wish is my command",
-        "What's the plan, Stan?",
-        "Buckle up! Where are we headed?",
-        "Another day, another build",
+        "What's the plan today?",
+        "Where are we headed?",
+        "Another day, another win",
         "What's on your mind?",
         "Let's get this show on the road"
       ]

@@ -80,8 +80,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteMetadata.title,
     description: siteMetadata.description,
-    creator: '@kortix',
-    site: '@kortix',
+    creator: '@homegrownpropertygroup',
+    site: '@homegrownpropertygroup',
     images: ['/banner.png'],
   },
   icons: {
@@ -166,25 +166,25 @@ export default function RootLayout({
         />
         
         {/* Static SEO meta tags - rendered in initial HTML */}
-        <title>Kortix: Your Autonomous AI Worker</title>
+        <title>Home Grown AI – Results start at the roots.</title>
         <meta name="description" content="Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects." />
-        <meta name="keywords" content="Kortix, AI Worker, Agentic AI, Autonomous AI Worker, AI Automation, AI Workflow Automation, AI Assistant, Task Automation" />
-        <meta property="og:title" content="Kortix: Your Autonomous AI Worker" />
+        <meta name="keywords" content="Home Grown AI, Real Estate AI, AI Assistant, Home Grown Property Group, South Charlotte Real Estate, Real Broker" />
+        <meta property="og:title" content="Home Grown AI – Results start at the roots." />
         <meta property="og:description" content="Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects." />
-        <meta property="og:image" content="https://kortix.com/banner.png" />
-        <meta property="og:url" content="https://kortix.com" />
+        <meta property="og:image" content="/hgpg-logo-clean.png" />
+        <meta property="og:url" content="https://ai.homegrownpropertygroup.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Kortix" />
+        <meta property="og:site_name" content="Home Grown AI" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kortix: Your Autonomous AI Worker" />
+        <meta name="twitter:title" content="Home Grown AI – Results start at the roots." />
         <meta name="twitter:description" content="Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects." />
-        <meta name="twitter:image" content="https://kortix.com/banner.png" />
+        <meta name="twitter:image" content="/hgpg-logo-clean.png" />
         <meta name="twitter:site" content="@kortix" />
-        <link rel="canonical" href="https://kortix.com" />
+        <link rel="canonical" href="https://ai.homegrownpropertygroup.com" />
         
         {/* iOS Smart App Banner - shows native install banner in Safari */}
         {!featureFlags.disableMobileAdvertising ? (
-          <meta name="apple-itunes-app" content="app-id=6754448524, app-argument=kortix://" />
+          <meta name="apple-itunes-app" content="app-argument=https://ai.homegrownpropertygroup.com" />
         ) : null}
 
 
@@ -196,15 +196,15 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: siteMetadata.name,
-              alternateName: ['Kortix', 'Kortix AI', 'Kortix: Your Autonomous AI Worker'],
+              alternateName: ['Home Grown AI', 'HGPG AI', 'Home Grown Property Group AI'],
               url: siteMetadata.url,
               logo: `${siteMetadata.url}/favicon.png`,
               description: siteMetadata.description,
               foundingDate: '2024',
               sameAs: [
-                'https://github.com/Kortix-ai/Suna',
-                'https://x.com/kortix',
-                'https://linkedin.com/company/kortix',
+                
+                
+                'https://www.instagram.com/homegrownpropertygroup/',
               ],
               contactPoint: {
                 '@type': 'ContactPoint',
@@ -222,7 +222,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'SoftwareApplication',
               name: siteMetadata.title,
-              alternateName: [siteMetadata.name, 'Kortix'],
+              alternateName: [siteMetadata.name, 'Home Grown AI'],
               applicationCategory: 'BusinessApplication',
               operatingSystem: 'Web, macOS, Windows, Linux',
               description: siteMetadata.description,

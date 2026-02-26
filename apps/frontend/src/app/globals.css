@@ -256,7 +256,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(0.9924 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.265 0.038 240);  /* HGPG Navy #2A384C */
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(54.65% 0.246 262.87);
   --secondary-foreground: oklch(0.205 0 0);
@@ -277,7 +277,7 @@
   --radius: 0.625rem;
   --sidebar: oklch(0.9741 0 129.63);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary: oklch(0.265 0.038 240);  /* HGPG Navy */
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.1149 0 0 / 4%);
   --sidebar-accent-foreground: oklch(0.205 0 0);
@@ -312,7 +312,7 @@
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.185 0.005 285.823);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary: oklch(0.72 0.035 220);  /* HGPG Slate Blue */
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);

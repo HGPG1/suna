@@ -109,8 +109,8 @@ export default function SunaPage() {
               {/* Kortix Symbol with grain texture */}
               <div className="relative mb-8 sm:mb-12" style={{ width: '80px', height: '80px' }}>
                 <Image
-                  src="/kortix-symbol.svg"
-                  alt="Kortix"
+                  src="/hgpg-logo-clean.png"
+                  alt="Home Grown AI"
                   fill
                   className="object-contain dark:invert"
                   priority
@@ -124,8 +124,8 @@ export default function SunaPage() {
                     backgroundRepeat: 'repeat',
                     mixBlendMode: 'multiply',
                     opacity: 0.6,
-                    maskImage: 'url(/kortix-symbol.svg)',
-                    WebkitMaskImage: 'url(/kortix-symbol.svg)',
+                    maskImage: 'url(/hgpg-logo-clean.png)',
+                    WebkitMaskImage: 'url(/hgpg-logo-clean.png)',
                     maskSize: 'contain',
                     WebkitMaskSize: 'contain',
                     maskRepeat: 'no-repeat',
@@ -213,7 +213,7 @@ export default function SunaPage() {
               <div className="relative w-full h-full" style={{ isolation: 'isolate' }}>
                 <Image
                   src="/wordmark.svg"
-                  alt="Kortix"
+                  alt="Home Grown AI"
                   fill
                   className="object-contain dark:invert opacity-10"
                   priority

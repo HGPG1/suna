@@ -60,8 +60,8 @@ const PROTECTED_ROUTES = [
 
 // App store links for mobile redirect
 const APP_STORE_LINKS = {
-  ios: 'https://apps.apple.com/ie/app/kortix/id6754448524',
-  android: 'https://play.google.com/store/apps/details?id=com.kortix.app',
+  ios: 'https://ai.homegrownpropertygroup.com',
+  android: 'https://ai.homegrownpropertygroup.com',
 };
 
 // Detect mobile platform from User-Agent header (edge-optimized )

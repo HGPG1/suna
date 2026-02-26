@@ -12,7 +12,7 @@ type ParagraphItem =
 
 const paragraphs: ParagraphItem[] = [
   "Most AI tools stop at thinking. We built one that acts.",
-  "Kortix is an AI agent that doesn't just give you answers—it gets things done. Research, code, write, manage projects, execute workflows. The whole job.",
+  "Home Grown AI is an AI agent that doesn't just give you answers—it gets things done. Research, write, manage projects, execute workflows. The whole job.",
   "We started with a simple problem: people spend too much time on execution and not enough on the work that actually moves things forward.",
   "So we built an AI that handles the doing. The research. The drafts. The code. The follow-through. All the stuff that fills your day but doesn't define your value.",
   "This isn't about replacing people. It's about freeing them. Give the grunt work to AI. Keep the strategy, creativity, and decisions for yourself.",
@@ -250,7 +250,7 @@ export default function AboutPage() {
           <div className="relative aspect-[16/9] w-full overflow-hidden">
             <Image
               src="/images/team.webp"
-              alt="The Kortix team"
+              alt="The Home Grown Property Group team"
               fill
               className="object-cover object-top"
               priority
@@ -316,7 +316,7 @@ export default function AboutPage() {
 
             {/* Kortix logo */}
             <div className="text-center mt-6">
-              <Image src="/kortix-symbol.svg" alt="Kortix" width={16} height={13} className="inline-block opacity-20 dark:invert" />
+              <Image src="/hgpg-logo-clean.png" alt="Home Grown AI" width={16} height={13} className="inline-block opacity-20 dark:invert" />
             </div>
           </div>
 
@@ -351,7 +351,7 @@ export default function AboutPage() {
 
               {/* Kortix logo */}
               <div className="text-center mt-4">
-                <Image src="/kortix-symbol.svg" alt="Kortix" width={16} height={13} className="inline-block opacity-20 dark:invert" />
+                <Image src="/hgpg-logo-clean.png" alt="Home Grown AI" width={16} height={13} className="inline-block opacity-20 dark:invert" />
               </div>
             </div>
 
@@ -380,7 +380,7 @@ export default function AboutPage() {
 
               {/* Kortix logo */}
               <div className="text-center mt-4">
-                <Image src="/kortix-symbol.svg" alt="Kortix" width={16} height={13} className="inline-block opacity-20 dark:invert" />
+                <Image src="/hgpg-logo-clean.png" alt="Home Grown AI" width={16} height={13} className="inline-block opacity-20 dark:invert" />
               </div>
             </div>
           </div>

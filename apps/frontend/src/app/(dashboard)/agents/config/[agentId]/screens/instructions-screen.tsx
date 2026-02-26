@@ -30,7 +30,7 @@ export function InstructionsScreen({ agentId }: InstructionsScreenProps) {
         if (!isEditable) {
             if (isSunaAgent) {
                 toast.error("System prompt cannot be edited", {
-                    description: "Kortix's system prompt is managed centrally.",
+                    description: "Home Grown AI's system prompt is managed centrally.",
                 });
             }
             return;

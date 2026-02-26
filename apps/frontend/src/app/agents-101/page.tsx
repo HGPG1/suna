@@ -666,7 +666,7 @@ const SlideContent = ({ slide }: { slide: Slide }) => {
           >
             <Image
               src="/Logomark.svg"
-              alt="Kortix"
+              alt="Home Grown AI"
               width={140}
               height={40}
               className="dark:invert h-10 w-auto"
@@ -741,8 +741,8 @@ const SlideContent = ({ slide }: { slide: Slide }) => {
             transition={{ delay: 0.2, type: 'spring' }}
           >
             <Image
-              src="/kortix-symbol.svg"
-              alt="Kortix"
+              src="/hgpg-logo-clean.png"
+              alt="Home Grown AI"
               width={80}
               height={80}
               className="dark:invert w-full h-full"
@@ -1123,7 +1123,7 @@ export default function Agents101Page() {
       <div className="fixed top-8 left-8 z-50">
         <Image
           src="/Logomark.svg"
-          alt="Kortix"
+          alt="Home Grown AI"
           width={72}
           height={72}
           className="dark:invert"

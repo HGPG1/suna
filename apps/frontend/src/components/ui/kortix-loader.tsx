@@ -134,7 +134,7 @@ export function KortixLoader({
     : 'rgba(0, 0, 0, 0.1)';
   const spinnerColor = effectiveVariant === 'white' 
     ? '#ffffff' 
-    : '#000000';
+    : '#2A384C';
 
   // Don't render during SSR - render a placeholder instead
   if (!mounted) {

@@ -29,7 +29,7 @@ export function ToolsScreen({ agentId }: ToolsScreenProps) {
         if (!areToolsEditable) {
             if (isSunaAgent) {
                 toast.error("Tools cannot be edited", {
-                    description: "Kortix's tools are managed centrally.",
+                    description: "Home Grown AI's tools are managed centrally.",
                 });
             }
             return;

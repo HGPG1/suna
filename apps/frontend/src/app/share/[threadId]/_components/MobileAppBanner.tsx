@@ -89,7 +89,7 @@ export function MobileAppBanner({ threadId }: MobileAppBannerProps) {
       if (platform === 'ios') {
         window.location.href = 'https://apps.apple.com/app/kortix/id6739583417';
       } else if (platform === 'android') {
-        window.location.href = 'https://play.google.com/store/apps/details?id=com.kortix.app';
+        window.location.href = 'https://ai.homegrownpropertygroup.com';
       }
     }, 2000);
   };
