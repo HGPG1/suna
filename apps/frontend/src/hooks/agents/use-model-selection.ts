@@ -23,13 +23,13 @@ const isPaidTier = (tierKey: string | undefined): boolean => {
 };
 
 const getDefaultModel = (accessibleModels: ModelOption[]): string => {
-  // Pick the first accessible model (sorted by priority)
-  // kortix/basic should be first for free users since power is not accessible
+  // Prefer Advanced (power) mode as default for best results
+  // Falls back to Basic if Advanced is not accessible
+  const powerModel = accessibleModels.find(m => m.id === 'kortix/power');
+  if (powerModel) return powerModel.id;
+
   const basicModel = accessibleModels.find(m => m.id === 'kortix/basic');
   if (basicModel) return basicModel.id;
-
-  const powerModel = accessibleModels.find(m => m.id === 'hgpg/power');
-  if (powerModel) return powerModel.id;
 
   // Fallback: pick from accessible models sorted by priority
   if (accessibleModels.length > 0) {
@@ -110,10 +110,10 @@ export const useModelSelection = () => {
     const isNowPaid = isPaidTier(currentTier);
 
     if (wasFree && isNowPaid && prevTierKey.current !== null) {
-      const powerModel = availableModels.find(m => m.id === 'hgpg/power' && !m.requiresSubscription);
+      const powerModel = availableModels.find(m => m.id === 'kortix/power' && !m.requiresSubscription);
       if (powerModel) {
-        console.log('🚀 useModelSelection: Upgraded to paid tier! Switching to hgpg/power');
-        setSelectedModel('hgpg/power');
+        console.log('🚀 useModelSelection: Upgraded to paid tier! Switching to kortix/power');
+        setSelectedModel('kortix/power');
       }
     }
 

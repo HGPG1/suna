@@ -354,10 +354,10 @@ class ModelFactory:
     
     @staticmethod
     def create_power_model(main_llm: str, custom_model: Optional[str] = None) -> Model:
-        # Default models per provider (same as basic for now)
+        # Default models per provider - Advanced uses Sonnet for maximum intelligence
         default_models = {
-            "bedrock": BedrockConfig.get_haiku_arn(),
-            "anthropic": "anthropic/claude-haiku-4-5-20251001",
+            "bedrock": BedrockConfig.get_sonnet_arn(),
+            "anthropic": "anthropic/claude-sonnet-4-5",
             "grok": "openrouter/x-ai/grok-4.1-fast",
             "openai": "openrouter/openai/gpt-4o-mini",
             "minimax": "openrouter/minimax/minimax-m2.1",
@@ -423,7 +423,7 @@ class ModelFactory:
                     ModelCapability.THINKING,
                     ModelCapability.PROMPT_CACHING,
                 ],
-                pricing=PricingPresets.HAIKU_4_5,
+                pricing=PricingPresets.SONNET_4_5,
                 tier_availability=["paid"],
                 priority=101,
                 recommended=True,
