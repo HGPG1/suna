@@ -560,6 +560,7 @@ const AssistantGroupRow = memo(function AssistantGroupRow({
           sandboxId,
           project,
           isLatestMessage,
+          agentStatus,
           t,
           threadId,
           onPromptFill,

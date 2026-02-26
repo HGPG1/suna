@@ -25,6 +25,7 @@ export interface AssistantMessageRendererProps {
   sandboxId?: string;
   project?: Project;
   isLatestMessage?: boolean;
+  agentStatus?: string; // 'running' | 'connecting' | 'idle' — only show waiting message when agent is active
   t?: (key: string) => string;
   threadId?: string;
   onPromptFill?: (message: string) => void;
@@ -46,7 +47,9 @@ function renderAskToolCall(
   index: number,
   props: AssistantMessageRendererProps
 ): React.ReactNode {
-  const { onFileClick, sandboxId, project, isLatestMessage, t, onPromptFill } = props;
+  const { onFileClick, sandboxId, project, isLatestMessage, agentStatus, t, onPromptFill } = props;
+  // Only show the "will proceed autonomously" message when the agent is actively running/waiting
+  const isAgentActive = agentStatus === 'running' || agentStatus === 'connecting';
   const askText = toolCall.arguments?.text || '';
   const attachments = normalizeAttachments(toolCall.arguments?.attachments);
   const followUpAnswers = normalizeArrayValue(toolCall.arguments?.follow_up_answers);
@@ -77,15 +80,15 @@ function renderAskToolCall(
           />
         </div>
       )}
-      {isLatestMessage && (
+      {isLatestMessage && isAgentActive && (
         <div className="flex items-center gap-2 mt-3">
           <Clock className="h-4 w-4 text-orange-500 flex-shrink-0" />
           <p className="text-sm text-muted-foreground">
-            {t ? t('thread.waitingForUserResponse') : 'Kortix will proceed to work autonomously after you answer.'}
+            {t ? t('thread.waitingForUserResponse') : 'Home Grown AI will proceed to work autonomously after you answer.'}
           </p>
         </div>
       )}
-      {isLatestMessage && followUpAnswers.length > 0 && (
+      {isLatestMessage && isAgentActive && followUpAnswers.length > 0 && (
         <PromptExamples
           prompts={followUpAnswers.slice(0, 4).map(answer => ({ text: answer }))}
           onPromptClick={(answer) => onPromptFill?.(answer)}
