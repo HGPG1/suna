@@ -10,7 +10,7 @@ class EmailService:
     def __init__(self):
         self.api_token = os.getenv('MAILTRAP_API_TOKEN')
         self.sender_email = os.getenv('MAILTRAP_SENDER_EMAIL', 'hey@kortix.com')
-        self.sender_name = os.getenv('MAILTRAP_SENDER_NAME', 'Kortix Team')
+        self.sender_name = os.getenv('MAILTRAP_SENDER_NAME', 'Home Grown AI Team')
         self.hello_email = 'hello@kortix.com'
         
         if not self.api_token:
@@ -60,7 +60,7 @@ class EmailService:
             logger.info(f"Attempting to send referral email from {sender_email_to_use} to {recipient_email}")
             
             mail = mt.Mail(
-                sender=mt.Address(email=sender_email_to_use, name='Kortix'),
+                sender=mt.Address(email=sender_email_to_use, name='Home Grown AI'),
                 to=[mt.Address(email=recipient_email, name=recipient_name)],
                 subject=subject,
                 text=text_content,
@@ -232,7 +232,7 @@ You received this email because you signed up for a Kortix account."""
         Hi <strong>{recipient_name}</strong>,  👋
       </p>
       <p style="margin:0 0 20px 0; font-size:15px; line-height:1.6;">
-        <strong>{sender_name}</strong> has invited you to join Kortix using a personal referral code.
+        <strong>{sender_name}</strong> has invited you to join Home Grown AI using a personal referral code.
         When you sign up using this link, both you and {sender_name} will receive 100 in non-expiring credits 🎁
       </p>
       <p style="margin:0 0 10px 0; font-weight:600;">
@@ -292,7 +292,7 @@ You received this email because you signed up for a Kortix account."""
     def _get_referral_email_text(self, recipient_name: str, sender_name: str, referral_url: str) -> str:
         return f"""Hi {recipient_name},
 
-{sender_name} has invited you to join Kortix using a personal referral code.
+{sender_name} has invited you to join Home Grown AI using a personal referral code.
 
 When you sign up using this link, both you and {sender_name} will receive 100 in non-expiring credits 🎁
 

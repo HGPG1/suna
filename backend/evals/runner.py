@@ -73,7 +73,7 @@ class AgentEvalRunner:
     
     def __init__(
         self,
-        project_name: str = "Kortix Agent",
+        project_name: str = "Home Grown AI Agent",
         model_name: Optional[str] = "kortix/basic",
         max_iterations: int = 50,
         timeout_seconds: float = 120.0,
@@ -645,7 +645,7 @@ def create_agent_task(
         from evals.runner import create_agent_task
         
         Eval(
-            "Kortix Agent",
+            "Home Grown AI Agent",
             data=lambda: [...],
             task=create_agent_task(project_id="your-project-id"),  # Enable sandbox tools
             scores=[...],
