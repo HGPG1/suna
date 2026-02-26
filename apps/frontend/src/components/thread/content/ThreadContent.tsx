@@ -598,6 +598,7 @@ const AssistantGroupRow = memo(function AssistantGroupRow({
     onPromptFill,
     streamHookStatus,
     aggregatedTextContent,
+    agentStatus,
   ]);
 
   const streamingContent = useMemo(() => {

@@ -193,8 +193,7 @@ export function useThreadToolCalls(
         setCurrentToolIndex(historicalToolPairs.length - 1);
       } else if (!isSidePanelOpen && !autoOpenedPanel && !userClosedPanelRef.current && !isMobile && !compact) {
         setCurrentToolIndex(historicalToolPairs.length - 1);
-        setIsSidePanelOpen(true);
-        setAutoOpenedPanel(true);
+        // Panel stays closed by default - user can open it manually
       }
     }
   }, [historicalToolPairs.length, isSidePanelOpen, autoOpenedPanel, agentStatus, isMobile, compact, setIsSidePanelOpen]);
@@ -451,7 +450,8 @@ export function useThreadToolCalls(
         return updated;
       });
 
-      if (!compact) {
+      // Only auto-open panel if user hasn't manually closed it
+      if (!compact && !userClosedPanelRef.current) {
         setIsSidePanelOpen(true);
       }
 

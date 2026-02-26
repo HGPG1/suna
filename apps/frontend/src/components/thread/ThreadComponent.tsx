@@ -1444,7 +1444,7 @@ export function ThreadComponent({ projectId, threadId, compact = false, configur
       setInitialPanelOpenAttempted(true);
       if (!isMobile && !compact && !isSidePanelOpen) {
         if (toolCalls.length > 0) {
-          setIsSidePanelOpen(true);
+          // Panel stays closed by default - user can open it manually
           setCurrentToolIndex(toolCalls.length - 1);
         }
       }
