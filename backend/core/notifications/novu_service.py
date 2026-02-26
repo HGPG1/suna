@@ -20,7 +20,7 @@ class NovuService:
             else:
                 logger.info(f"Novu service disabled (ENV_MODE: {config.ENV_MODE.value})")
         elif not self.api_key:
-            logger.warning("NOVU_SECRET_KEY not found in environment variables")
+            logger.info("NOVU_SECRET_KEY not configured - push notifications disabled")
         else:
             logger.info(f"Novu service initialized with backend URL: {self.backend_url}")
     

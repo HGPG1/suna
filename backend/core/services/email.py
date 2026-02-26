@@ -14,7 +14,7 @@ class EmailService:
         self.hello_email = 'hello@kortix.com'
         
         if not self.api_token:
-            logger.warning("MAILTRAP_API_TOKEN not found in environment variables")
+            logger.info("MAILTRAP_API_TOKEN not configured - email sending disabled")
             self.client = None
         else:
             self.client = mt.MailtrapClient(token=self.api_token)
