@@ -87,6 +87,13 @@ class PricingPresets:
         output_cost_per_million_tokens=0.28,
         cached_read_cost_per_million_tokens=0.014,
     )
+    SONNET_4_5 = ModelPricing(
+        input_cost_per_million_tokens=3.00,
+        output_cost_per_million_tokens=15.00,
+        cached_read_cost_per_million_tokens=0.30,
+        cache_write_5m_cost_per_million_tokens=3.75,
+        cache_write_1h_cost_per_million_tokens=6.00,
+    )
 
 
 FREE_MODEL_ID = "kortix/minimax"
@@ -751,6 +758,11 @@ class ModelRegistry:
         self._litellm_id_to_pricing["openrouter/moonshotai/kimi-k2.5"] = PricingPresets.KIMI_K2_5
         self._litellm_id_to_pricing["bedrock/anthropic.claude-3-5-haiku-20241022-v1:0"] = PricingPresets.HAIKU_3_5
         self._litellm_id_to_pricing["openrouter/deepseek/deepseek-chat-v3-0324"] = PricingPresets.DEEPSEEK_V3
+        # Claude Sonnet 4.5 pricing mappings
+        self._litellm_id_to_pricing["claude-sonnet-4-5"] = PricingPresets.SONNET_4_5
+        self._litellm_id_to_pricing["anthropic/claude-sonnet-4-5"] = PricingPresets.SONNET_4_5
+        self._litellm_id_to_pricing["anthropic/claude-sonnet-4-5-20251001"] = PricingPresets.SONNET_4_5
+        self._litellm_id_to_pricing[BedrockConfig.get_sonnet_arn()] = PricingPresets.SONNET_4_5
     
     def register(self, model: Model) -> None:
         self._models[model.id] = model

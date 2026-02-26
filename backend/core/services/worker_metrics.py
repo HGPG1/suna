@@ -144,6 +144,9 @@ async def publish_to_cloudwatch(metrics: dict) -> bool:
         logger.debug(f"Published metrics to CloudWatch: {metrics.get('active_agent_runs')} active runs, {metrics.get('orphaned_streams')} orphaned streams")
         return True
     except Exception as e:
+        # Silently skip if AWS credentials are not configured - this is expected in non-AWS deployments
+        if "Unable to locate credentials" in str(e) or "NoCredentialsError" in str(e):
+            return False
         logger.error(f"Failed to publish API instance metrics to CloudWatch: {e}")
         return False
 
