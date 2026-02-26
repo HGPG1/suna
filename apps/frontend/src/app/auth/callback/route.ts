@@ -160,16 +160,36 @@ export async function GET(request: NextRequest) {
         if (accountData) {
           const { data: creditAccount } = await supabase
             .from('credit_accounts')
-            .select('tier, stripe_subscription_id')
+            .select('tier, stripe_subscription_id, credits_balance')
             .eq('account_id', accountData.id)
             .single();
 
-          // Only redirect to setting-up if no subscription exists (webhook failed or old user)
-          if (creditAccount && (creditAccount.tier === 'none' || !creditAccount.stripe_subscription_id)) {
-            console.log('⚠️ No subscription detected - redirecting to setting-up (fallback)');
-            finalDestination = '/setting-up'
+          if (!creditAccount) {
+            // Truly new user with no credit account at all - needs setup
+            console.log('⚠️ No credit account found - redirecting to setting-up (new user)');
+            finalDestination = '/setting-up';
+          } else if (creditAccount.tier === 'none' && !creditAccount.stripe_subscription_id && (!creditAccount.credits_balance || creditAccount.credits_balance <= 0)) {
+            // Has a credit account but no subscription and no credits - needs setup
+            console.log('⚠️ No subscription or credits detected - redirecting to setting-up (fallback)');
+            finalDestination = '/setting-up';
           } else {
-            console.log('✅ Account already initialized via webhook');
+            // Has credits or a subscription - existing user, go straight to dashboard
+            console.log('✅ Existing user with credits/subscription - skipping setting-up');
+          }
+        } else {
+          // No basejump account yet - this is a brand new Google OAuth user
+          // Check if they are an existing email user by looking at account creation time
+          // If user was created more than 2 minutes ago, they likely have an existing account
+          // being linked - send to dashboard rather than setting-up
+          const createdAt = new Date(data.user.created_at).getTime();
+          const now = Date.now();
+          const accountAgeMs = now - createdAt;
+          if (accountAgeMs > 120000) {
+            // Account older than 2 minutes - existing user, skip setup
+            console.log('✅ Existing user account (>2min old) - skipping setting-up');
+          } else {
+            console.log('⚠️ New user with no account - redirecting to setting-up');
+            finalDestination = '/setting-up';
           }
         }
       }
