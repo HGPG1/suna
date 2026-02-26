@@ -210,19 +210,19 @@ function SupportPageContent() {
               <div className="border-t border-border">
                 <FAQItem
                   question="What is Home Grown AI?"
-                  answer="Kortix is a generalist AI worker that can perform real-world tasks on your behalf. Unlike traditional AI assistants, Kortix can actually take action across your apps, automate workflows, and handle complex multi-step tasks autonomously."
+                  answer="Home Grown AI is a generalist AI worker that can perform real-world tasks on your behalf. Unlike traditional AI assistants, Home Grown AI can actually take action across your apps, automate workflows, and handle complex multi-step tasks autonomously."
                 />
                 <FAQItem
-                  question="How can Kortix help me?"
-                  answer="Kortix can automate repetitive tasks, manage your workflows, interact with web services, process data, create content, and coordinate complex operations across multiple platforms. Simply tell Kortix what you need done, and it handles the execution from start to finish."
+                  question="How can Home Grown AI help me?"
+                  answer="Home Grown AI can automate repetitive tasks, manage your workflows, interact with web services, process data, create content, and coordinate complex operations across multiple platforms. Simply tell Home Grown AI what you need done, and it handles the execution from start to finish."
                 />
                 <FAQItem
-                  question="How is Kortix different from other AI platforms?"
-                  answer="While most AI platforms only provide information or suggestions, Kortix actually performs real-world tasks. It can browse the web, interact with APIs, manage files, execute commands, and integrate with your existing tools to complete tasks autonomously—not just tell you how to do them."
+                  question="How is Home Grown AI different from other AI platforms?"
+                  answer="While most AI platforms only provide information or suggestions, Home Grown AI actually performs real-world tasks. It can browse the web, interact with APIs, manage files, execute commands, and integrate with your existing tools to complete tasks autonomously—not just tell you how to do them."
                 />
                 <FAQItem
-                  question="Can Kortix connect to my apps?"
-                  answer="Yes! Kortix can connect to thousands of apps and services through integrations. It can interact with your tools, APIs, databases, and workflows to automate tasks across your entire tech stack. You control which apps and services Kortix can access."
+                  question="Can Home Grown AI connect to my apps?"
+                  answer="Yes! Home Grown AI can connect to thousands of apps and services through integrations. It can interact with your tools, APIs, databases, and workflows to automate tasks across your entire tech stack. You control which apps and services Home Grown AI can access."
                 />
                 <FAQItem
                   question="How do I request a new feature?"
@@ -343,7 +343,7 @@ function SupportPageContent() {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Terms of Service</h3>
                     <p className="text-muted-foreground text-sm mb-4">
-                      Our terms and conditions for using Kortix services, including user responsibilities and service limitations.
+                      Our terms and conditions for using Home Grown AI services, including user responsibilities and service limitations.
                     </p>
                     <Link href="/legal?tab=terms" className="text-primary hover:underline font-medium text-sm">
                       Read Terms →
@@ -373,7 +373,7 @@ function SupportPageContent() {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Imprint</h3>
                     <p className="text-muted-foreground text-sm mb-4">
-                      Company information and legal details about Kortix AI Corp, including contact information and registration.
+                      Company information and legal details about Home Grown AI, including contact information and registration.
                     </p>
                     <Link href="/legal?tab=imprint" className="text-primary hover:underline font-medium text-sm">
                       View Imprint →

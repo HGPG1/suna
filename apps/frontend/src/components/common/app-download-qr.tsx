@@ -49,7 +49,7 @@ export function AppDownloadQR({
     <div className={cn("relative bg-white rounded-2xl p-4 shadow-lg", className)}>
       <img 
         src={qrUrl}
-        alt="Scan to download Kortix - redirects to App Store or Google Play based on your device"
+        alt="Scan to download Home Grown AI - redirects to App Store or Google Play based on your device"
         width={size}
         height={size}
         className="block"

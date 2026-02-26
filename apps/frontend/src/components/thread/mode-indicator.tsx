@@ -14,8 +14,8 @@ import { isProductionMode } from '@/lib/config';
 import { ModelProviderIcon } from '@/lib/model-provider-icons';
 import { Separator } from '@/components/ui/separator';
 
-// Logo component for mode display with theme support
-// Uses CSS to switch between light/dark variants without JS
+// Mode label component for display with theme support
+// Uses text styling instead of SVG images for reliable branding
 const ModeLogo = memo(function ModeLogo({ 
   mode, 
   height = 12
@@ -23,27 +23,53 @@ const ModeLogo = memo(function ModeLogo({
   mode: 'basic' | 'advanced'; 
   height?: number;
 }) {
-  const darkSrc = mode === 'advanced' ? '/Advanced-Light.svg' : '/Basic-Light.svg';
-  const lightSrc = mode === 'advanced' ? '/Advanced-Dark.svg' : '/Basic-Dark.svg';
-
+  const fontSize = Math.round(height * 1.1);
+  if (mode === 'advanced') {
+    return (
+      <span className="flex-shrink-0 flex items-center gap-1" style={{ height: `${height}px` }}>
+        <span
+          className="font-semibold tracking-tight"
+          style={{
+            fontSize: `${fontSize}px`,
+            lineHeight: 1,
+            background: 'linear-gradient(135deg, #2A384C 0%, #A0B2C2 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}
+        >
+          Home Grown AI
+        </span>
+        <span
+          className="font-normal text-muted-foreground"
+          style={{ fontSize: `${fontSize}px`, lineHeight: 1 }}
+        >
+          Advanced
+        </span>
+      </span>
+    );
+  }
   return (
-    <span className="flex-shrink-0 relative" style={{ height: `${height}px`, width: 'auto' }}>
-      {/* Light mode image */}
-      <img
-        src={lightSrc}
-        alt={mode === 'advanced' ? 'Home Grown AI Advanced' : 'Home Grown AI Basic'}
-        className="block dark:hidden"
-        style={{ height: `${height}px`, width: 'auto' }}
-        suppressHydrationWarning
-      />
-      {/* Dark mode image */}
-      <img
-        src={darkSrc}
-        alt={mode === 'advanced' ? 'Home Grown AI Advanced' : 'Home Grown AI Basic'}
-        className="hidden dark:block"
-        style={{ height: `${height}px`, width: 'auto' }}
-        suppressHydrationWarning
-      />
+    <span className="flex-shrink-0 flex items-center gap-1" style={{ height: `${height}px` }}>
+      <span
+        className="font-semibold tracking-tight"
+        style={{
+          fontSize: `${fontSize}px`,
+          lineHeight: 1,
+          background: 'linear-gradient(135deg, #2A384C 0%, #A0B2C2 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+        }}
+      >
+        Home Grown AI
+      </span>
+      <span
+        className="font-normal text-muted-foreground"
+        style={{ fontSize: `${fontSize}px`, lineHeight: 1 }}
+      >
+        Basic
+      </span>
     </span>
   );
 });

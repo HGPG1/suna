@@ -1,11 +1,11 @@
 {
-  "name": "Kortix the Super Mega Giga Worker",
-  "short_name": "Kortix",
-  "description": "Kortix the Super Mega Giga Worker – A generalist AI Worker that is able to autonomously tackle complex tasks, browse the web, write and execute code, manage files, conduct research, automate workflows, and accomplish real-world objectives through natural conversation.",
+  "name": "Home Grown AI",
+  "short_name": "Home Grown AI",
+  "description": "Home Grown AI – A generalist AI Worker that is able to autonomously tackle complex tasks, browse the web, write and execute code, manage files, conduct research, automate workflows, and accomplish real-world objectives through natural conversation.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#2A384C",
+  "theme_color": "#2A384C",
   "orientation": "portrait-primary",
   "icons": [
     {
@@ -21,7 +21,7 @@
       "purpose": "any"
     },
     {
-      "src": "/logo_black.png",
+      "src": "/hgpg-logo-clean.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -31,16 +31,5 @@
   "scope": "/",
   "lang": "en-US",
   "dir": "ltr",
-  "related_applications": [
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.kortix.app",
-      "id": "com.kortix.app"
-    },
-    {
-      "platform": "itunes",
-      "url": "https://apps.apple.com/ie/app/kortix/id6754448524"
-    }
-  ],
-  "prefer_related_applications": true
+  "prefer_related_applications": false
 }

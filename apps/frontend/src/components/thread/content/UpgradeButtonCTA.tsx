@@ -58,7 +58,7 @@ export const UpgradeButtonCTA: React.FC<UpgradeButtonCTAProps> = ({
 
       <div className="flex-1 min-w-0">
         <p className="text-sm font-semibold">
-          Unlock more with Kortix
+          Unlock more with Home Grown AI
         </p>
         <p className="text-xs text-muted-foreground/90 mt-0.5">
           Get more credits, faster responses, and unlimited chats

@@ -34,7 +34,7 @@ const slides: Slide[] = [
     id: 2,
     type: 'speaker',
     title: 'Marko Kraemer & Domenico Gagliardi',
-    subtitle: 'CEO & COO at Kortix',
+    subtitle: 'CEO & COO at Home Grown AI',
   },
   {
     id: 3,

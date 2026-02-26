@@ -108,7 +108,7 @@ export const GranularToolConfiguration = ({
 
     if (disabled && isSunaAgent) {
       toast.error("Tools cannot be modified", {
-        description: "Kortix's default tools are managed centrally and cannot be changed.",
+        description: "Home Grown AI's default tools are managed centrally and cannot be changed.",
       });
       return;
     }
@@ -150,7 +150,7 @@ export const GranularToolConfiguration = ({
 
     if (disabled && isSunaAgent) {
       toast.error("Methods cannot be modified", {
-        description: "Kortix's default tool methods are managed centrally and cannot be changed.",
+        description: "Home Grown AI's default tool methods are managed centrally and cannot be changed.",
       });
       return;
     }

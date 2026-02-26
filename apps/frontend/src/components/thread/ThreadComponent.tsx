@@ -1531,7 +1531,7 @@ export function ThreadComponent({ projectId, threadId, compact = false, configur
   // SEO title update
   useEffect(() => {
     if (projectName) {
-      document.title = `${projectName} | Kortix`;
+      document.title = `${projectName} | Home Grown AI`;
 
       const metaDescription = document.querySelector(
         'meta[name="description"]',
@@ -1545,7 +1545,7 @@ export function ThreadComponent({ projectId, threadId, compact = false, configur
 
       const ogTitle = document.querySelector('meta[property="og:title"]');
       if (ogTitle) {
-        ogTitle.setAttribute('content', `${projectName} | Kortix`);
+        ogTitle.setAttribute('content', `${projectName} | Home Grown AI`);
       }
 
       const ogDescription = document.querySelector(

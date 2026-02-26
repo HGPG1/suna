@@ -50,7 +50,7 @@ const ModelLabel = ({ label, className }: { label: string; className?: string })
             </span>
         );
     }
-    if (label === 'Kortix Test') {
+    if (label === 'Home Grown AI Test') {
         return (
             <span className={cn("flex items-center gap-2", className)}>
                 <span className="font-medium">Home Grown AI</span>

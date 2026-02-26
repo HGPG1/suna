@@ -127,7 +127,7 @@ export default function ActivateTrialPage() {
           <div>
             <CardTitle className="text-2xl font-medium flex items-center justify-center gap-2">
               <KortixLogo />
-              <span>Welcome to Kortix</span>
+              <span>Welcome to Home Grown AI</span>
             </CardTitle>
             <CardDescription className="mt-2">
               Start your journey with a 7-day free trial

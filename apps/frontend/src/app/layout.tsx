@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   description: siteMetadata.description,
   keywords: siteMetadata.keywords,
-  authors: [{ name: 'Kortix Team', url: 'https://www.kortix.com' }],
-  creator: 'Kortix Team',
-  publisher: 'Kortix Team',
+  authors: [{ name: 'Home Grown AI Team', url: 'https://ai.homegrownpropertygroup.com' }],
+  creator: 'Home Grown AI Team',
+  publisher: 'Home Grown AI Team',
   applicationName: siteMetadata.name,
   robots: {
     index: true,
@@ -179,7 +179,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="Home Grown AI – Results start at the roots." />
         <meta name="twitter:description" content="Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects." />
         <meta name="twitter:image" content="/hgpg-logo-clean.png" />
-        <meta name="twitter:site" content="@kortix" />
+        <meta name="twitter:site" content="@homegrownai" />
         <link rel="canonical" href="https://ai.homegrownpropertygroup.com" />
         
         {/* iOS Smart App Banner - shows native install banner in Safari */}

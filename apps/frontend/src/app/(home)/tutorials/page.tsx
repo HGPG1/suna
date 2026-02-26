@@ -32,8 +32,8 @@ interface Tutorial {
 const tutorials: Tutorial[] = [
   {
     id: 'introduction-to-kortix',
-    title: 'Introduction to Kortix',
-    description: 'Get a comprehensive overview of Kortix and discover the different AI-powered content generation modes available to supercharge your workflow.',
+    title: 'Introduction to Home Grown AI',
+    description: 'Get a comprehensive overview of Home Grown AI and discover the different AI-powered content generation modes available to supercharge your workflow.',
     duration: '3 min',
     icon: Sparkles,
     embedCode: `<div style="position: relative; padding-bottom: calc(57.3684% + 41px); height: 0px; width: 100%;"><iframe src="https://demo.arcade.software/iG83WENBBNvLFbzIf8kE?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" title="Explore Templates and AI-Powered Content Generation Modes" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;" ></iframe></div>`,
@@ -44,19 +44,19 @@ const tutorials: Tutorial[] = [
     description: 'Learn the basics of creating and completing your first task with Home Grown AI. This tutorial walks you through the essential workflow to get you productive right away.',
     duration: '4 min',
     icon: Rocket,
-    embedCode: `<div style="position: relative; padding-bottom: calc(57.3684% + 41px); height: 0px; width: 100%;"><iframe src="https://demo.arcade.software/8tC4UfBbqMpsUo6CM30i?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" title="Your first task with Kortix" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;" ></iframe></div>`,
+    embedCode: `<div style="position: relative; padding-bottom: calc(57.3684% + 41px); height: 0px; width: 100%;"><iframe src="https://demo.arcade.software/8tC4UfBbqMpsUo6CM30i?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" title="Your first task with Home Grown AI" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;" ></iframe></div>`,
   },
   {
     id: 'create-export-presentations',
     title: 'How to Create and Export Presentations',
-    description: 'Discover how to create stunning presentations with Kortix and export them in various formats for sharing and presenting.',
+    description: 'Discover how to create stunning presentations with Home Grown AI and export them in various formats for sharing and presenting.',
     duration: '4 min',
     icon: Presentation,
     embedCode: `<div style="position: relative; padding-bottom: calc(57.3684% + 41px); height: 0px; width: 100%;"><iframe src="https://demo.arcade.software/p1ot4ZaAhDZYY61npOrT?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true" title="Create a Q4 Business Review Presentation with Slide Templates" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;" ></iframe></div>`,
   },
   {
     id: 'create-manage-files',
-    title: 'How to Create and Manage Files with Kortix',
+    title: 'How to Create and Manage Files with Home Grown AI',
     description: 'Learn how to create, organize, and manage files with Home Grown AI. This tutorial covers downloading data, exporting to different formats like Excel, and more.',
     duration: '3 min',
     icon: FolderOpen,
@@ -260,7 +260,7 @@ export default function TutorialsPage() {
                 <BookOpen className="w-6 h-6 text-primary" />
               </div>
               <span className="text-sm font-medium text-muted-foreground">
-                Learn Kortix
+                Learn Home Grown AI
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-4">

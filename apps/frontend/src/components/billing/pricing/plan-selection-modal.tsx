@@ -73,7 +73,7 @@ export function PlanSelectionModal({
                     {displayReason || (creditsExhausted ? 'You\'re out of credits' : 'Select a Plan')}
                 </DialogTitle>
                 <DialogDescription className="sr-only">
-                    {displayReason || (creditsExhausted ? 'Choose a plan to continue using Kortix' : 'Choose the plan that best fits your needs')}
+                    {displayReason || (creditsExhausted ? 'Choose a plan to continue using Home Grown AI' : 'Choose the plan that best fits your needs')}
                 </DialogDescription>
                 <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-4 sm:px-6 py-4 sm:py-5 lg:py-3 pointer-events-none bg-background/80 backdrop-blur-md">
                     <div className="flex-1" />

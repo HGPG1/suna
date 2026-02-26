@@ -228,7 +228,7 @@ export async function GET(request: NextRequest) {
                 color: '#94a3b8',
               }}
             >
-              Discover powerful AI agents on Kortix
+              Discover powerful AI agents on Home Grown AI
             </p>
           </div>
         </div>
